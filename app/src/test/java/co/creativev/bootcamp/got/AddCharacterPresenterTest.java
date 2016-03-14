@@ -27,7 +27,7 @@ public class AddCharacterPresenterTest {
 
     @Test
     public void testShouldShowErrorIfNameNotProvided() throws Exception {
-        presenter.addCharacter("", "file://tmp.jpg", 1);
+        presenter.addCharacter("", "file://tmp.jpg", R.id.radio_baratheon);
         verify(mockView).showNameError();
     }
 
